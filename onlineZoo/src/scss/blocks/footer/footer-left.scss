@@ -1,0 +1,91 @@
+.footer-left {
+  margin-right: 8%;
+
+  &__logo {
+    margin-bottom: 63px; //69
+
+    & img {
+      width: 82px;
+      height: 52px;
+    }
+  }
+
+  &__button {
+    border-radius: 5px;
+    margin-bottom: 44px;
+  }
+}
+
+@media(max-width: $s-desk) {
+  .footer-left {
+    margin-right: 0;
+
+    &__button {
+      margin-left: 1px;
+    }
+  }
+}
+
+@media(max-width: 870px) {
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 183px;
+    width: 100%;
+    padding-left: 2%;
+
+    &__cover {
+      margin-bottom: 24px; //при сборке уезжает
+      height: 60px;
+
+      & a {
+        width: 83px;
+      }
+    }
+
+    &__button {
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    &__social {
+      margin-left: auto;
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .footer-left {
+    align-items: center;
+    padding-left: 0;
+
+    &__cover {
+      margin-bottom: 0;
+      height: 55px;
+
+      & a {
+        width: 128px;
+        height: 25px;
+      }
+    }
+
+    &__logo {
+      & img {
+        width: 128px;
+        height: 25px;
+      }
+    }
+
+    &__social {
+      margin-left: 0;
+      margin-bottom: 26px;
+    }
+
+    &__button {
+      order: 3;
+      margin-right: 4px;
+      width: 95.5%;
+    }
+  }
+}

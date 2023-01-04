@@ -1,0 +1,231 @@
+.feed {
+  display: flex;
+  justify-content: center;
+  padding-top: 68px;
+  margin-bottom: 123px;
+  min-height: 1003px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  color: #333B41;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10px;
+    width: 1160px;
+    height: 835px;
+    padding-top: 59px;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24.5px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FE9013;
+  }
+
+  &__container {
+    padding-left: 3.2%;
+  }
+
+  &__content {
+    &-top {
+      margin-bottom: 39px;
+      font-size: 24px;
+      line-height: 120%;
+    }
+
+    &-middle {
+      font-weight: 500;
+      margin-bottom: -7px;
+    }
+
+    &-bottom {
+      width: 870px;
+      margin-bottom: 35px;
+
+      & a {
+        display: inline;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          width: 100%;
+          height: 1px;
+          background: #FE9013;
+
+        }
+      }
+    }
+  }
+
+
+  &__title-bottom {
+    margin-left: -3.5px;
+    margin-bottom: 53px;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  &__button {
+    color: white;
+  }
+}
+
+@media(max-width: 1220px) {
+  .feed {
+    &__wrapper {
+      width: 94%;
+    }
+  }
+}
+
+@media(max-width: $s-desk) {
+  .feed {
+    padding-top: 30px;
+    min-height: 876px;
+    margin-bottom: 84px;
+
+    &__wrapper {
+      height: 796px;
+      margin-left: -7px;
+      padding-top: 48px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__container {
+      padding-left: 5.25%;
+    }
+
+    &__content {
+      &-top {
+        margin-bottom: 19.5px;
+      }
+
+      &-middle {
+        width: 91%;
+        line-height: 134%;
+        margin-bottom: -6.5px;
+      }
+
+      &-bottom {
+        width: 90%;
+        line-height: 132%;
+        margin-bottom: 16.5px;
+
+        & a {
+          &::before {
+            bottom: -1px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__title-bottom {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media(max-width: 813px) {
+  .feed {
+    padding-top: 20px;
+    min-height: 781px;
+    margin-bottom: 43.5px;//при сборке уезжает
+
+    &__wrapper {
+      width: 100%;
+      height: 741px;
+      margin-left: 0;
+      padding-top: 10px;
+    }
+
+    &__container {
+      padding-left: 3.1%;
+    }
+
+    &__title {
+      margin-bottom: -2px;
+      font-size: 42px;
+      line-height: 120%;
+    }
+
+    &__content {
+      &-top {
+        width: 99%;
+        font-size: 22px;
+        margin-bottom: 19px;
+      }
+
+      &-middle {
+        width: 99%;
+        margin-bottom: -7px;
+      }
+
+      &-bottom {
+        width: 99%;
+        margin-bottom: 35px;
+      }
+    }
+
+    &__title-bottom {
+      margin-top: 8px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media(max-width: 620px) {
+  .feed {
+    padding-bottom: 20.5px;
+    margin-bottom: 14.5px;
+
+    &__wrapper {
+      width: 94%;
+      height: 1042px;
+      padding-top: 21px;
+    }
+
+    &__title {
+      margin-bottom: -7px;
+      font-size: 24px;
+    }
+
+    &__content {
+      &-top {
+        width: 96%;
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      &-middle {
+        display: none;
+      }
+
+      &-bottom {
+        display: none;
+      }
+    }
+
+    &__title-bottom {
+      margin-bottom: 23px;
+      font-size: 24px;
+    }
+
+    &__button {
+      width: 99.3%;
+    }
+  }
+}

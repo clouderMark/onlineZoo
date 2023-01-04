@@ -1,0 +1,21 @@
+
+$s-desk: 1000px;
+$tablet: 640px;
+$mobile: 384px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// @media(min-width: @tablet) {
+//   .page-header {
+//       height: 470px;
+//       align-items: center;
+//       background-color: @black;
+//       background-image: url('../img/back-tablet-1x.jpg');
+//       background-position: center;
+
+//       @media (min-resolution: @retina-dpi),
+//       (min-resolution: @retina-dppx) {
+//           background-image: url('../img/back-tablet-2x.jpg');
+//           background-size: 100%;
+//       }

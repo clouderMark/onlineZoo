@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 298px;
+  height: 54px;
+  text-transform: uppercase;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+
+  &:hover{
+    background: #E47209;
+  }
+
+  &:active {
+    background: #4B9200;
+  }
+
+  &:disabled {
+    background: #767474;
+  }
+}

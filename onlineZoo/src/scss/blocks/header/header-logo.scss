@@ -1,0 +1,20 @@
+.header-logo {
+  margin-right: 4.1%;
+}
+
+@media(max-width: $s-desk) {
+  .header-logo {
+    margin-left: 1%;
+    margin-right: 5.1%;
+  }
+}
+
+
+@media(max-width: 710px) {
+  .header-logo {
+    width: 47px;
+    height: 29px;
+    margin-left: 3.09%;
+    margin-right: 0;
+  }
+}

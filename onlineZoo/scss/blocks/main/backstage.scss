@@ -1,0 +1,177 @@
+.backstage {
+  display: flex;
+  justify-content: center;
+  height: 724px;
+  padding-top: 124px;
+  background-image: url('@img/flower_foto1.png');
+  background-repeat: no-repeat;
+  background-position: right 13px;
+  color: #333B41;
+  line-height: 21.5px;
+
+  &__conteiner {
+    display: flex;
+    width: 1176px;
+  }
+
+  &__header {
+    margin: 0px;
+    margin-bottom: 19.5px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  &__header-low {
+    margin-bottom: 34px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: normal;
+  }
+
+  &__content {
+    margin-bottom: 54px;
+  }
+
+  &__wrapper {
+    padding-top: 16px;
+    width: 465px;
+    margin-left: 87px;
+  }
+}
+
+@media(max-width: 1500px) {
+  .backstage {
+    background-image: none !important;
+  }
+}
+
+@media(max-width: 1160px) {
+  .backstage {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &__wrapper {
+      margin-left: 40px;
+    }
+  }
+}
+
+@media(max-width: $s-desk) {
+  .backstage {
+    padding-top: 93px;
+    margin-bottom: 91px;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+
+    &__conteiner {
+      width: 947px;
+    }
+
+    &__wrapper {
+      padding-top: 7px;
+      width: 454px;
+      margin-left: 32px;
+    }
+
+    &__img img {
+      width: 455px;
+    }
+  }
+}
+
+@media(max-width: 710px) {
+  .backstage {
+    padding-top: 60px;
+    background-image: url('@img/flower-tablet.png') !important;
+    background-repeat: no-repeat;
+    background-position: right -5px;
+
+    &__img {
+      display: none;
+    }
+
+    &__conteiner {
+      width: 100%;
+    }
+
+    &__wrapper {
+      padding-top: 0;
+      width: 482px;
+      margin-left: 3.8%;
+    }
+
+    &__header {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      margin-left: -4px;
+      margin-bottom: 30px;
+    }
+
+    &__header-low {
+      margin-bottom: 19.5px;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: normal;
+    }
+  }
+}
+
+@media(max-width: 620px) {
+  .body .page-main .backstage {
+    background-image: none !important;
+  }
+}
+
+@media(max-width: 620px) {
+  .backstage {
+    position: relative;
+    margin-bottom: 59.5px;
+    padding-top: 25px;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -42px;
+      width: 35px;
+      height: 217px;
+      background-image: url('@img/flower-mobile.png');
+      background-repeat: no-repeat;
+    }
+
+    &__wrapper {
+      width: 100%;
+      margin-left: 3%;
+      padding-top: 0;
+    }
+
+    &__header {
+      margin-bottom: 9.5px;
+      font-size: 24px;
+      line-height: 120%;
+    }
+
+    &__content {
+      width: 95%;
+      margin: 0;
+      margin-left: 2px;
+      margin-bottom: 19px;
+
+      &--bottom {
+        line-height: 138%;
+        margin-left: 0;
+      }
+    }
+
+    &__header-low {
+      margin: 0;
+      margin-left: 0.8%;
+      margin-bottom: 9px;
+    }
+  }
+}

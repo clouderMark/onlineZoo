@@ -1,0 +1,134 @@
+.range {
+  z-index: -2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 978px;
+  height: 27px;
+  margin-bottom: 98px;
+  background: #404950;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 12px;
+    left: 25px;
+    width: 915px;
+    height: 2px;
+    background: #72828E;
+  }
+
+
+  &::after {
+    content: 'Amount';
+    position: absolute;
+    top: -40px;
+    left: 4px;
+    width: 30px;
+    height: 10px;
+    font-size: 16px;
+    color: black;
+  }
+
+  &__item {
+    position: relative;
+    margin-top: -10px;
+    width: 69px;
+    font-weight: 400;
+    font-size: 26px;
+    color: #333B41;
+
+  }
+}
+
+@media(max-width: 1200px) {
+  .range {
+    width: 810px;
+
+    &::before {
+      width: 750px;
+    }
+    
+    &::after {
+      left: 0;
+    }
+
+    &__item {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 860px) {
+  .range {
+    width: 100%;
+
+    &::before {
+      width: 92.5%;
+    }
+
+    &__item {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 825px) {
+  .range {
+    &::before {
+      width: 91%;
+    }
+  }
+}
+
+@media(max-width: 691px) {
+  .range {
+    &::before {
+      width: 90%;
+    }
+  }
+}
+
+@media(max-width: 640px) {
+  .range {
+    &__item {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+
+    &::after {
+      top: -29px;
+      left: 10px;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .range {
+    height: 14px;
+    margin-bottom: 49px;
+
+    &::before {
+      width: 88%;
+      top: 5.5px;
+      left: 6%;
+      height: 1.5px;
+    }
+
+    &::after {
+      top: -30px;
+      left: 1px;
+    }
+
+    &__item {
+      width: 39px;
+      font-size: 13px;
+    }
+  }
+}

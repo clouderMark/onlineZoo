@@ -1,0 +1,35 @@
+.burger-btn {
+  position: relative;
+  cursor: pointer;
+  margin-right: 0.8%;
+  width: 48px;
+  height: 32.5px;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 13.5px;
+    left: 15px;
+    width: 18px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 -4px 0 0 white,
+                0 4px 0 0 white;
+  }
+
+  &__d-none {
+    display: none;
+  }
+}
+
+@media(max-width: 320px) {
+  .burger-btn {
+    width: 43px;
+    margin-right: 0;
+    margin-top: 1px;
+  }
+}

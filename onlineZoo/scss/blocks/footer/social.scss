@@ -1,0 +1,103 @@
+.social {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    width: 60%;
+    margin-bottom: 5.5px;
+  }
+
+  &__link {
+    position: relative;
+    padding: 4px;
+    padding-left: 39px;
+
+    &:active {
+      color: #4B9200;
+
+      &::before {
+        background-color: #4B9200;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0.5px;
+      top: 0px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: rgba(196, 196, 196, 0.5);
+
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+    }
+
+    &--1::after {
+      left: 10px;
+      top: 5px;
+      width: 19px;
+      height: 22px;
+      background-image: url('@img/facebook.svg');
+    }
+
+    &--2::after {
+      left: 5.5px;
+      top: 7px;
+      width: 16px;
+      height: 14px;
+      background-image: url('@img/Twitter.svg');
+    }
+
+    &--3::after {
+      left: 5.5px;
+      top: 5px;
+      width: 18px;
+      height: 18px;
+      background-image: url('@img/Instagram.svg');
+    }
+
+    &--4::after {
+      left: 5px;
+      top: 6.5px;
+      width: 18px;
+      height: 18px;
+      background-image: url('@img/YouTube.svg');
+    }
+  }
+}
+
+@media(max-width: 870px) {
+  .social {
+    font-size: 0;
+    width: 39px;
+
+    &__item {
+      width: 39px;
+      margin-bottom: 16px;
+    }
+
+    &__link {
+      padding-right: 0;
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .social {
+    flex-direction: row;
+    width: 206px;
+    justify-content: space-between;
+    margin-right: -4%;
+
+    &__item {
+      width: 39px;
+      margin-bottom: 0px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.active {
+  color: #F9804B;
+
+  &:hover {
+    color: white !important;
+  }
+}
+
+@media(max-width: 710px) {
+  .active {
+    &:hover {
+      color: #111115 !important;
+    }
+  }
+}

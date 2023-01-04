@@ -1,0 +1,163 @@
+.feed-list {
+  display: flex;
+  justify-content: space-between;
+  width: 764px;
+  margin-bottom: 61px;
+
+  &__item {
+    position: relative;
+    width: 168px;
+
+    & span {
+      margin-left: -2px;
+    }
+  }
+
+  &__square {
+    width: 166px;
+    height: 166px;
+    margin-bottom: 32px;
+    background-color: white;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 168.5px;
+      height: 168.5px;
+      top: -1px;
+      left: -1px;
+      background: linear-gradient(#F9804B, #FE9013);
+      border-radius: 5px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 71px;
+      height: 38px;
+      right: -100px;
+      top: 59px;
+      background-repeat: no-repeat;
+    }
+
+    &--1 {
+      background-image: url('@img/pay.png');
+      background-size: 108px 60px;
+      background-position: center;
+
+      &::after {
+        background-image: url('@img/arrow.png');
+      }
+    }
+
+    &--2 {
+      background-image: url('@img/zoo.png');
+      background-size: 86px 95px;
+      background-position: 39px 39px;
+
+      &::after {
+        background-image: url('@img/arrow.png');
+      }
+    }
+
+    &--3 {
+      background-image: url('@img/monkey.png');
+      background-size: 135px 82px;
+      background-position: 15px 46px;
+    }
+  }
+}
+
+@media(max-width: $s-desk) {
+  .feed-list {
+    width: 81.4%;
+    margin-bottom: 71px;
+  }
+}
+
+@media(max-width: 940px) {
+  .feed-list {
+    &__square {
+      &::after {
+        background-image: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .feed-list {
+    width: 93%;
+    padding-right: 1.2%;
+    margin-bottom: 41.5px;
+
+    &__square {
+      &::after {
+        width: 92px;
+        z-index: 1;
+        transform: rotate(-1deg);
+        right: -58px;
+      }
+      &--1 {
+        &::after {
+          background-image: url('@img/arrow-tablet.png');
+          top: -16px;
+        }
+      }
+      &--2 {
+        &::after {
+          background-image: url('@img/arrow-tablet.png');
+          top: -18px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 620px) {
+  .feed-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    margin-right: -2%;
+
+    &__item {
+      width: 168px;
+      padding-bottom: 12px;
+
+      &:first-child {
+        margin-bottom: 31px;
+      }
+      margin-bottom: 17px;
+  
+      & span {
+        margin-left: 2px;
+      }
+    }
+
+    &__square {
+      margin-bottom: 12px;
+
+      &::after {
+        transform: rotate(84deg);
+        top: auto;
+      }
+      &--1 {
+        &::after {
+          background-image: url('@img/arrow-tablet.png');
+          bottom: -14px;
+        }
+      }
+      &--2 {
+        &::after {
+          background-image: url('@img/arrow-tablet.png');
+          bottom: 1px;
+        }
+      }
+    }
+  }
+}

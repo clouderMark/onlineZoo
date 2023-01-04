@@ -1,0 +1,32 @@
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3px;
+  margin-right: 0.85%;
+}
+
+@media(max-width: $s-desk) {
+  .footer-right {
+    width: 230px;
+  }
+}
+
+@media(max-width: 870px) {
+  .footer-right {
+    width: 230px;
+    padding-top: 0px;
+    margin-right: 1.8%;
+    margin-top: 11px;
+    margin-bottom: 9px
+  }
+}
+
+@media(max-width: 400px) {
+  .footer-right {
+    width: 216px;
+    margin-left: auto;
+    margin-top: 1px;
+    margin-bottom: 18.5px
+  }
+}

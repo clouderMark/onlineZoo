@@ -1,0 +1,54 @@
+.description-card {
+  position: absolute;
+  left: 30px;
+  padding: 15px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #ededed;
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 137px;
+    height: 31px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #F1F3F2;
+    border-radius: 5px;
+    color: #4B9200;
+
+    &:hover {
+     color: #FE9013;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-left: transparent;
+    background: #ededed;
+    border-top: transparent;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 220px;
+    height: 30px;
+  }
+}

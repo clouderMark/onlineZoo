@@ -1,0 +1,50 @@
+.period {
+  display: flex;
+  justify-content: space-between;
+  width: 218px;
+  margin-bottom: 24px;
+  color: #333B41;
+
+  & label {
+    cursor: pointer;
+    display: flex;
+
+  }
+
+  & span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 34px;
+    padding-left: 29px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 9px;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #FE9013;
+      border-radius: 50%;
+    }
+  }
+
+  & input:checked+span::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #4B9200;
+    border-radius: 50%;
+  }
+}
+
+@media(max-width: 500px) {
+  .period {
+    width: 223px;
+    margin-bottom: 21px;
+  }
+}

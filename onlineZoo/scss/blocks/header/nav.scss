@@ -1,0 +1,13 @@
+.nav {
+  width: 89%;
+}
+
+@media(max-width: 710px) {
+  .nav {
+    display: none;
+    width: 100%;
+    &__d-block {
+      display: block;
+    }
+  }
+}

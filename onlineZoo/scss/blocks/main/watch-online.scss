@@ -1,0 +1,56 @@
+.watch-online {
+  display: flex;
+  justify-content: center;
+  height: 386px;
+  background-image: url('@img/Giant Panda.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: bottom -180px center;
+
+  &--index {
+    height: 700px;
+    background-position: 0 0;
+  }
+}
+
+@media(max-width: 1160px) {
+  .watch-online {
+    background-image: url('@img/Giant Panda s-desk.jpg');
+    background-position: 0;
+    height: 390px;
+
+    &--index {
+      height: 504px;
+    }
+  }
+}
+
+@media(max-width: 710px) {
+  .watch-online {
+    margin-top: 34px;
+    height: 335px;
+    background-size: 166%;
+    background-position: left -136px center;
+    &--index {
+      height: 339px;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media(max-width: 460px) {
+  .watch-online {
+    align-items: center;
+    height: 187px;
+    background-size: 200%;
+    background-position: 27%;
+    
+    &--index {
+      height: 267px;
+      background-image: url('@img/Giant Panda-mobile.jpg');
+      background-size: 100%;//auto
+      background-position: top;
+    }
+  }
+}

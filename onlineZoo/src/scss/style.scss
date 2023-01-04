@@ -1,0 +1,88 @@
+@import 'blocks/common/normalize';
+@import 'fonts';
+@import 'blocks/common/border-box';
+@import 'blocks/common/visually-hidden.scss';
+@import 'blocks/common/a';
+@import 'blocks/common/img';
+@import 'blocks/common/list-style-ul';
+@import 'blocks/vars';
+@import 'blocks/body';
+@import 'blocks/header/page-header';
+@import 'blocks/header/close-btn';
+@import 'blocks/common/mask';
+@import 'blocks/header/navigation';
+@import 'blocks/header/header-logo';
+@import 'blocks/header/nav';
+@import 'blocks/header/burger-btn';
+@import 'blocks/header/nav-list';
+@import 'blocks/main/watch-online';
+@import 'blocks/main/main-content';
+@import 'blocks/common/button';
+@import 'blocks/main/backstage';
+@import 'blocks/main/description-card';
+@import 'blocks/main/pets-list';
+@import 'blocks/main/pets';
+@import 'blocks/main/arrow';
+@import 'blocks/main/feed';
+@import 'blocks/main/feed-list';
+@import 'blocks/main/testimonials';
+@import 'blocks/main/range-testimonials';
+@import 'blocks/footer/page-footer';
+@import 'blocks/footer/footer-left';
+@import 'blocks/footer/social';//
+@import 'blocks/footer/footer-middle';
+@import 'blocks/footer/about';//
+@import 'blocks/footer/footer-right';
+@import 'blocks/footer/footer-form';//
+@import 'blocks/footer/contacts';//
+@import 'blocks/common/active.scss';
+
+//donate
+@import 'blocks/donate/for-friend';
+@import 'blocks/donate/feed-form';
+@import 'blocks/donate/amount';
+@import 'blocks/donate/range';
+@import 'blocks/donate/amount-radio';
+@import 'blocks/donate/quantity';
+@import 'blocks/donate/period';
+
+// .page-footer {
+//   &__wrap {
+//     display: flex;
+//     justify-content: center;
+//     background-color: black;
+//   }
+
+
+//   &__logo {
+//     grid-area: l;
+//     justify-self: start;
+//   }
+
+//   &__button {
+//     grid-area: b;
+//   }
+
+//   &__social {
+//     grid-area: s;
+//   }
+
+//   &__about {
+//     grid-area: a;
+//   }
+
+//   &__form {
+//     grid-area: f;
+//     justify-self: end;
+//   }
+
+//   &__contacts {
+//     grid-area: c;
+//   }
+
+//   width: 1172px;
+//   display: grid;
+//   grid-template-columns: 80px auto;
+//   grid-template-rows: 100px;
+//   grid-template-areas: 'l f';
+// }

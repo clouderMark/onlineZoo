@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>PetStory online</title>
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <h1 class="visually-hidden">PetStory Online</h1>
+    <div class="navigation">
+      <a href="index.html" class="header-logo">
+        <picture>
+          <source class="header-logo__logo" media="(max-width: 710px)" srcset="img/logo-tablet.png">
+          <img src="img/logo.png" width="82" height="52" alt="PetStory online">
+        </picture>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#" class="active">
+              About
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">
+              Map
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">
+              Zoos
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="donate.html">
+              Donate
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">
+              Contact us
+            </a>
+          </li>
+          <li class="nav-list__item nav-list__item--last">
+            <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1">
+              Designed by <span>©</span>
+            </a>
+          </li>
+        </ul>
+        <button class="navigation__close close-btn">Close menu</button>
+      </nav>
+      <button class="navigation__button burger-btn">Open menu</button>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <section class="watch-online watch-online--index">
+      <div class="main-content">
+        <h2 class="main-content__header">
+          Watch your <span class="main-content__header--colored">favorite</span> animal online
+        </h2>
+        <a href="https://nationalzoo.si.edu/webcams/panda-cam" class="main-content__button button">
+          wath online
+        </a>
+      </div>
+    </section>
+    <section class="backstage">
+      <div class="backstage__conteiner">
+        <p class="backstage__img">
+          <picture>
+            <source media="(max-width: 1000px)" srcset="img/bamboo-cap-s-desk.jpg">
+            <img src="img/bamboo-cap.jpg" width="609" height="403" alt="man in bamboo cap">
+          </picture>
+        </p>
+        <div class="backstage__wrapper">
+          <h2 class="backstage__header">
+            The Backstage of the Wilderness World.
+          </h2>
+          <p class="backstage__content">
+            The site was founded on the basis of a volunteer movement to protect and care for animals.
+          </p>
+          <h3 class="backstage__header-low">
+            How it works
+          </h3>
+          <p class="backstage__content backstage__content--bottom">
+            The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are
+            currently working on video projects targeting pandas in China, eagles on an island near Los Angeles,
+            alligators
+            in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="pets">
+      <h2 class="visually-hidden">
+        Choose your pets
+      </h2>
+      <div class="pets__wrapper">
+        <ul class="pets-list">
+          <template id="pets-item">
+            <li class="pets-list__item">
+              <h3 class="pets-list__title pets-list__title--fruit"></h3>
+              <p class="pets-list__content"></p>
+              <div class="pets-list__picture">
+                <img class="pets-list__img" src="" alt="">
+              </div>
+              <div class="description-card pets-list__description">
+                <h4 class="description-card__title"></h4>
+                <span class="description-card__location"></span>
+                <a class="description-card__button" href="">
+                  Watch online</a>
+              </div>
+            </li>
+          </template>
+        </ul>
+        <button class="arrow arrow--back pets__arrow pets__arrow--back">back</button>
+        <button class="arrow arrow--next pets__arrow pets__arrow--next">next</button>
+      </div>
+      <a class="pets__button button" href="map.html">choose your favorite</a>
+    </section>
+    <section class="feed">
+      <div class="feed__wrapper">
+        <h2 class="feed__title">
+          Pick and feed a friend
+        </h2>
+        <div class="feed__container">
+          <p class="feed__content-top">
+            We know the animals bring you joy, and in these extraordinary times, we’re glad.
+          </p>
+          <p class="feed__content-middle">
+            During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people
+            around
+            the world find joy in PetStory.
+          </p>
+          <p class="feed__content-bottom">
+            Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please
+            consider a gift to our <a href="donate.html">Emergency Support Fund</a> .
+          </p>
+        </div>
+        <h3 class="feed__title-bottom">
+          How it works
+        </h3>
+        <ul class="feed-list">
+          <li class="feed-list__item">
+            <div class="feed-list__square feed-list__square--1"></div>
+            <span>Pay with card</span>
+          </li>
+          <li class="feed-list__item">
+            <div class="feed-list__square feed-list__square--2"></div>
+            <span>Payment goes to the zoo</span>
+          </li>
+          <li class="feed-list__item">
+            <div class="feed-list__square feed-list__square--3"></div>
+            <span>Your favourite animal gets delicious dish</span>
+          </li>
+        </ul>
+        <a class="button feed__button" href="donate.html">Feed a friend now</a>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2 class="testimonials__title">
+        Testimonials
+      </h2>
+      <div class="testimonials__cover">
+        <div class="testimonials__wrap">
+          <div class="testimonials__wr">
+            <blockquote class="testimonials__item">
+              <div class="testimonials__container">
+                <p class="testimonials__author-picture">
+                  <picture>
+                    <source srcset="img/author-img1.webp" type="image/webp"><img class="testimonials__author-img"
+                      src="img/author-img1.png" width="37" height="37" alt="">
+                  </picture>
+                </p>
+                <div class="testimonials__inner">
+                  <cite class="testimonials__author-name">
+                    Michael John
+                  </cite>
+                  <div class="testimonials__wrapper">
+                    <address class="testimonials__address">Local Austria</address>
+                    <time class="testimonials__time" datetime="2022-09-21">Today</time>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonials__text">
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                the
+                ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to
+                watch
+                gouillas. Online zoo is one jf the ways to instill a love for animals.
+              </p>
+              <p class="testimonials__text">
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                the
+                ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to
+                watch
+                gouillas. Online zoo is one jf the ways to instill a love for
+              </p>
+            </blockquote>
+          </div>
+          <div class="testimonials__wr">
+            <blockquote class="testimonials__item">
+              <div class="testimonials__container">
+                <p class="testimonials__author-picture">
+                  <picture>
+                    <source srcset="img/author-img2.webp" type="image/webp"><img class="testimonials__author-img"
+                      src="img/author-img2.jpg" width="37" height="37" alt="">
+                  </picture>
+                </p>
+                <div class="testimonials__inner">
+                  <cite class="testimonials__author-name">
+                    Oskar Samborsky
+                  </cite>
+                  <div class="testimonials__wrapper">
+                    <address class="testimonials__address">Local Austria</address>
+                    <time class="testimonials__time" datetime="2022-09-20">Yesterday</time>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonials__text">
+                Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son
+                delighted
+                very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best
+                online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+              </p>
+              <p class="testimonials__text">
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                the
+                ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to
+                watch
+                gouillas. Online zoo is one jf the ways to instill a love for
+              </p>
+            </blockquote>
+          </div>
+          <div class="testimonials__wr">
+            <blockquote class="testimonials__item">
+              <div class="testimonials__container">
+                <p class="testimonials__author-picture">
+                  <picture>
+                    <source srcset="img/author-img4.webp" type="image/webp"><img class="testimonials__author-img"
+                      src="img/author-img4.jpg" width="37" height="37" alt="">
+                  </picture>
+                </p>
+                <div class="testimonials__inner">
+                  <cite class="testimonials__author-name">
+                    Oska Samborska
+                  </cite>
+                  <div class="testimonials__wrapper">
+                    <address class="testimonials__address">Local Austria</address>
+                    <time class="testimonials__time" datetime="2022-09-20">Yesterday</time>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonials__text">
+                Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son
+                delighted
+                very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best
+                online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+              </p>
+              <p class="testimonials__text">
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                the
+                ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to
+                watch
+                gouillas. Online zoo is one jf the ways to instill a love for animals.
+              </p>
+            </blockquote>
+          </div>
+          <div class="testimonials__wr">
+            <blockquote class="testimonials__item">
+              <div class="testimonials__container">
+                <p class="testimonials__author-picture">
+                  <picture>
+                    <source srcset="img/author-img3.webp" type="image/webp"><img class="testimonials__author-img"
+                      src="img/author-img3.jpg" width="37" height="37" alt="">
+                  </picture>
+                </p>
+                <div class="testimonials__inner">
+                  <cite class="testimonials__author-name">
+                    Fredericka Michelin
+                  </cite>
+                  <div class="testimonials__wrapper">
+                    <address class="testimonials__address">Local Austria</address>
+                    <time class="testimonials__time" datetime="2022-09-20">Yesterday</time>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonials__text">
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                the
+                ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to
+                watch
+                gouillas. Online zoo is one jf the ways to instill a love for animals.
+              </p>
+              <p class="testimonials__text">
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                the
+                ways to instill a love for animals.The best online zoo I’ve met.
+              </p>
+              <p class="testimonials__text">
+                The best online zoo I’ve met. My son delighted very much ljves to
+              </p>
+            </blockquote>
+          </div>
+          <div class="testimonials__wr">
+            <blockquote class="testimonials__item">
+              <div class="testimonials__container">
+                <p class="testimonials__author-picture">
+                  <picture>
+                    <source srcset="img/author-img4.webp" type="image/webp"><img class="testimonials__author-img"
+                      src="img/author-img4.jpg" width="37" height="37" alt="">
+                  </picture>
+                </p>
+                <div class="testimonials__inner">
+                  <cite class="testimonials__author-name">
+                    Mila Riksha
+                  </cite>
+                  <div class="testimonials__wrapper">
+                    <address class="testimonials__address">Local Austria</address>
+                    <time class="testimonials__time" datetime="2022-09-20">Yesterday</time>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonials__text">
+                My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is
+                one
+                jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves
+                to
+                watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
+                met.
+                My
+                son delighted very much ljves to watch gouillas.
+              </p>
+              <p class="testimonials__text">
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+              </p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="range-testimonials__wrapper">
+          <input class="range-testimonials" type="range" step="10" value="20">
+        </div>
+        <button class="button testimonials__button">leave feedback</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer__wrap">
+    <div class="page-footer">
+      <div class="footer-left">
+        <div class="footer-left__cover">
+          <a href="index.html" class="footer-left__logo">
+            <picture>
+              <source class="" media="(max-width: 400px)" srcset="img/logo-footer-mobile.png">
+              <img src="img/logo-footer.png" alt="PetStory online">
+            </picture>
+          </a>
+        </div>
+        <a class="button footer-left__button" href="donate.html">donate for volunteers</a>
+        <ul class="social footer-left__social">
+          <li class="social__item">
+            <a class="social__link social__link--1" href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--2" href="https://twitter.com">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--3" href="https://www.instagram.com">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--4" href="https://www.youtube.com/">YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-middle page-footer__middle">
+        <ul class="about">
+          <li class="about__item">
+            <a class="about__link active" href="#">About</a>
+          </li>
+          <li class="about__item">
+            <a class="about__link" href="#">Map</a>
+          </li>
+          <li class="about__item">
+            <a class="about__link" href="#">Zoos</a>
+          </li>
+          <li class="about__item">
+            <a class="about__link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <form class="footer-form" action="#" method="post">
+          <h2 class="footer-form__title">
+            Subscribe to our news
+          </h2>
+          <div class="footer-form__wrapper">
+            <label class="footer-form__lable">
+              <input class="footer-form__input" type="email" placeholder="Enter your email" required>
+              <span class="footer-form__text">Enter your email</span>
+            </label>
+            <button class="footer-form__button" type="submit">Submit</button>
+          </div>
+        </form>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">Designed by Alisa Samborskaya</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="https://rs.school/">©RSSchool & ©Yem Digital 2021</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="mask"></div>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
